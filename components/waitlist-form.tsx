@@ -19,12 +19,14 @@ export function WaitlistForm() {
     const fear = form.get("fear") as string
     const ambassador = form.get("ambassador") === "on"
 
+    // Validación de email
     if (!email || !email.includes("@") || !email.includes(".")) {
       alert("Por favor, introduce una dirección de correo electrónico válida.")
       setLoading(false)
       return
     }
 
+    // Validación de teléfono
     if (phone.length > 0) {
       const phoneRegex = /^[0-9+\-\s()]{6,}$/
       if (!phoneRegex.test(phone)) {
@@ -36,6 +38,7 @@ export function WaitlistForm() {
       }
     }
 
+    // Validación de miedo
     if (!fear) {
       alert("Por favor, selecciona qué miedo te gustaría trabajar.")
       setLoading(false)
@@ -46,7 +49,7 @@ export function WaitlistForm() {
 
     try {
       await fetch(
-        "https://script.google.com/macros/s/AKfycbwucao7d2Gea-AWKNaNqPnyjqblXfAMD2pbXR95wDYqij8azJiUjXVofixvT2ZDdNM/exec",
+        "https://script.google.com/macros/s/AKfycbyfFgOYSTwu6MiBvP_lfD84yU5OLt8kh8KDc09vQLaimdVKEHE9PTXZFTFtddY2s0c_/exec",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -88,7 +91,6 @@ export function WaitlistForm() {
           className="max-w-md mx-auto bg-white rounded-2xl border border-[#EEFEE2] shadow-sm hover:shadow-md transition-shadow duration-300 p-8 text-left"
         >
           <div className="space-y-5">
-            {/* EMAIL */}
             <input
               name="email"
               type="email"
@@ -98,10 +100,8 @@ export function WaitlistForm() {
               required
             />
 
-            {/* Campo trampa para romper heurística */}
             <input type="text" style={{ display: "none" }} autoComplete="off" />
 
-            {/* TELÉFONO */}
             <input
               id="contact_field"
               name="contact_field"
@@ -115,7 +115,6 @@ export function WaitlistForm() {
               <p className="text-red-500 text-sm -mt-3">{phoneError}</p>
             )}
 
-            {/* SELECT */}
             <select
               name="fear"
               className="w-full p-3 border border-gray-200 rounded-xl text-gray-800 focus:ring-2 focus:ring-[#93CC5A] outline-none transition-all"
@@ -130,7 +129,6 @@ export function WaitlistForm() {
               <option>Miedo al agua</option>
             </select>
 
-            {/* CHECKBOX */}
             <label className="flex items-center gap-2 text-sm text-gray-600">
               <input
                 name="ambassador"
@@ -140,7 +138,6 @@ export function WaitlistForm() {
               Quiero ser embajador y ayudar a mejorar Push
             </label>
 
-            {/* BOTÓN */}
             <Button
               size="lg"
               type="submit"
@@ -154,7 +151,6 @@ export function WaitlistForm() {
               {loading ? "Enviando..." : "Únete a la lista de espera"}
             </Button>
 
-            {/* CONFIRMACIÓN */}
             {success && (
               <p className="text-center text-green-600 text-sm mt-3">
                 ✅ Tu registro ha sido guardado correctamente.
