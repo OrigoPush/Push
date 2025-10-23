@@ -101,6 +101,20 @@ export function WaitlistForm() {
             {/* Campo trampa para romper heurística */}
             <input type="text" style={{ display: "none" }} autoComplete="off" />
 
+            {/* TELÉFONO */}
+            <input
+              id="contact_field"
+              name="contact_field"
+              type="text"
+              inputMode="tel"
+              placeholder="Teléfono (opcional)"
+              className={`${baseInput} ${phoneError ? "border-red-500" : ""}`}
+              autoComplete="new-password"
+            />
+            {phoneError && (
+              <p className="text-red-500 text-sm -mt-3">{phoneError}</p>
+            )}
+
             {/* SELECT */}
             <select
               name="fear"
