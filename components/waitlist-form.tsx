@@ -46,7 +46,7 @@ export function WaitlistForm() {
 
     try {
       await fetch(
-        "https://script.google.com/macros/s/AKfycbz0MRYxfPcjWvXcDNpf2Um14EUAVAd4ISacYnhDpBFblQirUj65EJEQk3iFhizKKew2Gg/exec",
+        "https://script.google.com/macros/s/AKfycbwucao7d2Gea-AWKNaNqPnyjqblXfAMD2pbXR95wDYqij8azJiUjXVofixvT2ZDdNM/exec",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
