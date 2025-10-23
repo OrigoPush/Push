@@ -49,13 +49,14 @@ export function WaitlistForm() {
 
     try {
       await fetch(
-        "https://script.google.com/macros/s/AKfycbyfFgOYSTwu6MiBvP_lfD84yU5OLt8kh8KDc09vQLaimdVKEHE9PTXZFTFtddY2s0c_/exec",
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(payload),
-        }
-      )
+      "https://script.google.com/macros/s/AKfycbyfFgOYSTwu6MiBvP_lfD84yU5OLt8kh8KDc09vQLaimdVKEHE9PTXZFTFtddY2s0c_/exec",
+      {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+      }
+  )
+
       setSuccess(true)
       e.currentTarget.reset()
     } catch (error) {
