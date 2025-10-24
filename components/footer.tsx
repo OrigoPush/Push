@@ -34,6 +34,19 @@ export function Footer() {
         </a>
       </div>
 
+      {/* Enlaces legales */}
+      <div className="flex justify-center gap-6 text-xs opacity-70 mb-4">
+        <a href="/aviso-legal" className="hover:underline">
+          Aviso legal
+        </a>
+        <a href="/privacidad" className="hover:underline">
+          Política de privacidad
+        </a>
+        <a href="/cookies" className="hover:underline">
+          Política de cookies
+        </a>
+      </div>
+
       {/* Texto inferior */}
       <p className="text-sm opacity-80 drop-shadow-[0_2px_4px_rgba(0,0,0,0.2)]">
         © 2025 Push. Todos los derechos reservados.

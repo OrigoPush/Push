@@ -51,7 +51,7 @@ export default function Page() {
         </section>
 
         {/* 4. PRICING */}
-        <section className="w-full bg-white">
+        <section className="hidden">
           <Pricing />
         </section>
 

@@ -8,16 +8,14 @@ export function VideoShowcase() {
     const video = videoRef.current
     if (!video) return
 
-    // Espera a que carguen los metadatos
     video.addEventListener("loadeddata", () => {
-      // Salta al segundo 1 y pausa
       video.currentTime = 1
       video.pause()
     })
   }, [])
 
   return (
-    <section className="px-4 py-28 text-center text-gray-700">
+    <section className="px-4 pt-16 pb-40 text-center text-gray-700">
       <div className="mx-auto max-w-6xl">
         {/* Título */}
         <h2 className="text-4xl md:text-5xl font-light mb-4">
@@ -36,15 +34,14 @@ export function VideoShowcase() {
         <div className="flex justify-center">
           <div className="relative rounded-2xl overflow-hidden shadow-2xl w-full max-w-3xl aspect-video">
             <video
-            ref={videoRef}
-            src="/push-trailer-esp.mp4"
-            poster="/push-thumb.jpg"
-            controls
-            playsInline
-            preload="auto"
-            className="w-full h-full object-cover border-none outline-none rounded-2xl shadow-2xl"
->
-
+              ref={videoRef}
+              src="/push-trailer-esp.mp4"
+              poster="/push-thumb.jpg"
+              controls
+              playsInline
+              preload="auto"
+              className="w-full h-full object-cover border-none outline-none rounded-2xl shadow-2xl"
+            >
               Tu navegador no soporta la reproducción de video.
             </video>
           </div>
