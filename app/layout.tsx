@@ -23,6 +23,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es" className={`${inter.variable} font-sans`}>
+      <head>
+        {/* Verificación de dominio Meta */}
+        <meta
+          name="facebook-domain-verification"
+          content="899zx6uc0092px66fa2e8sepeab99b"
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </head>
       <body className="antialiased bg-white text-neutral-900">
         {children}
         <Analytics />
