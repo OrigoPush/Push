@@ -15,7 +15,7 @@ export function Footer() {
       {/* Iconos sociales */}
       <div className="flex justify-center items-center gap-6 mb-6">
         <a
-          href="https://www.instagram.com/pushappxr"
+          href="https://www.instagram.com/push_xr/"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Instagram"
@@ -24,7 +24,7 @@ export function Footer() {
           <Instagram className="h-6 w-6 text-white" />
         </a>
         <a
-          href="https://www.tiktok.com/@pushappxr"
+          href="https://www.tiktok.com/@push_xr"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="TikTok"
@@ -35,14 +35,29 @@ export function Footer() {
       </div>
 
       {/* Enlaces legales */}
-      <div className="flex justify-center gap-6 text-xs opacity-70 mb-4">
-        <a href="/aviso-legal" className="hover:underline">
+      <div className="flex justify-center gap-6 text-sm opacity-80 mb-4 drop-shadow-[0_2px_4px_rgba(0,0,0,0.2)]">
+        <a
+          href="https://drive.google.com/file/d/1hUP6NjQE4ji-L6Iq-PwxmZVaKaNWY7C6/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:underline"
+        >
           Aviso legal
         </a>
-        <a href="/privacidad" className="hover:underline">
+        <a
+          href="https://drive.google.com/file/d/1hUP6NjQE4ji-L6Iq-PwxmZVaKaNWY7C6/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:underline"
+        >
           Política de privacidad
         </a>
-        <a href="/cookies" className="hover:underline">
+        <a
+          href="https://drive.google.com/file/d/1hUP6NjQE4ji-L6Iq-PwxmZVaKaNWY7C6/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:underline"
+        >
           Política de cookies
         </a>
       </div>
