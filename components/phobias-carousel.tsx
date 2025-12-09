@@ -52,7 +52,7 @@ export function PhobiasCarousel() {
             por venir
           </span>
         </h2>
-        <p className="text-lg md:text-xl font-light text-white mb-14">
+        <p className="text-lg md:text-xl font-light text-gray-500 mb-14">
         Seguimos ampliando nuestras experiencias XR — empezando por el miedo a volar y sumando más fobias de forma progresiva.
         </p>
       </div>
