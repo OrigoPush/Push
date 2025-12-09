@@ -2,18 +2,18 @@
 
 export function ScientificValidation() {
   return (
-    <section className="relative py-32 text-center text-neutral-800">
+    <section className="relative py-32 text-center text-white">
       <div className="max-w-3xl mx-auto px-6 relative z-10">
         <h2 className="text-4xl md:text-5xl font-light text-center mb-6">
           Validación científica y{" "}
-          <span className="font-semibold bg-gradient-to-r from-[#6B8F4E] via-[#7FBF58] via-[#93CC5A] via-[#A48AF0] to-[#845CE4] bg-clip-text text-transparent drop-shadow-[0_2px_3px_rgba(0,0,0,0.25)]">
+          <span className="font-semibold bg-gradient-to-r from-[#6B8F4E] via-[#93CC5A] to-[#865DE5] bg-clip-text text-transparent">
             exposición progresiva
           </span>
 
         </h2>
 
 
-        <p className="text-lg leading-relaxed text-neutral-700">
+        <p className="text-lg md:text-xl font-light text-white leading-relaxed">
           Push ha sido desarrollado junto a psicólogos y profesores de la Universidad de Málaga,
           aplicando principios de la terapia cognitivo-conductual y exposición gradual validados
           científicamente. Nuestro compromiso es integrar la evidencia académica con la innovación

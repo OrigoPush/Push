@@ -10,13 +10,13 @@ export function ValueProposition() {
           <h2 className="text-4xl md:text-5xl font-light mb-6">
             Push es una app{" "}
             <span className="font-semibold bg-gradient-to-r from-[#6B8F4E] via-[#93CC5A] to-[#865DE5] bg-clip-text text-transparent">
-              XR gamificada
+              XR personalizada
             </span>{" "}
             validada por psicólogos
           </h2>
 
           <p className="text-lg md:text-xl font-light text-gray-500 mb-14">
-            Ayuda a entrenar la mente para superar miedos mediante exposición gradual
+          Incorpora exposición progresiva mediante entornos inmersivos personalizables
           </p>
         </div>
 
@@ -29,7 +29,7 @@ export function ValueProposition() {
             </div>
             <h3 className="mb-2 text-xl font-medium text-card-foreground">Como Duolingo</h3>
             <p className="text-pretty font-light text-muted-foreground">
-              Pero para tu salud emocional. Aprende a superar tus miedos de forma progresiva y divertida
+            Pero aplicado a fobias: módulos XR progresivos que puedes adaptar en cada sesión
             </p>
           </Card>
 
@@ -40,7 +40,7 @@ export function ValueProposition() {
             </div>
             <h3 className="mb-2 text-xl font-medium text-card-foreground">Diseñada con psicólogos</h3>
             <p className="text-pretty font-light text-muted-foreground">
-              Hecha para jugar, sentir y avanzar. Cada ejercicio está validado científicamente
+            Construida con especialistas para estructurar cada escena y avanzar paso a paso
             </p>
           </Card>
 

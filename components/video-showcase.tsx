@@ -27,7 +27,8 @@ export function VideoShowcase() {
 
         {/* Subtítulo */}
         <p className="text-lg md:text-xl font-light text-gray-500 mb-14 max-w-2xl mx-auto font-[var(--font-sans)]">
-          Vive una muestra de nuestra experiencia XR gamificada. Cada escena está diseñada para guiarte paso a paso hacia la calma.
+        Vive una muestra de nuestra experiencia XR profesional.
+        Cada escena está diseñada para apoyar la exposición progresiva en consulta.
         </p>
 
         {/* VIDEO */}

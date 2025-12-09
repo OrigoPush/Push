@@ -24,15 +24,15 @@ export function Hero() {
       {/* Contenido principal */}
       <div className="relative z-10 px-6 max-w-3xl">
         <h1 className="text-5xl md:text-6xl font-light leading-tight mb-6 text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.3)]">
-          ¿Tienes
+          ¿Tratas
           <br />
           <span className="font-semibold bg-gradient-to-r from-[#6B8F4E] via-[#93CC5A] to-[#865DE5] bg-clip-text text-transparent">
-            miedo a volar
+            fobias en tu consulta
           </span>?
         </h1>
 
         <p className="text-lg md:text-xl font-light text-white mb-10 leading-relaxed drop-shadow-[0_1px_6px_rgba(0,0,0,0.4)]">
-          Recupera el control antes de subirte al avión
+        Apoya la exposición progresiva con entornos XR realistas
         </p>
 
         <Button

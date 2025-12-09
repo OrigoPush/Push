@@ -41,7 +41,7 @@ export function WaitlistForm() {
         </h2>
 
         <p className="text-lg md:text-xl font-light text-white/90 mb-14">
-          Sé de los primeros en probar Push y superar tus miedos con realidad extendida.
+        Sé de los primeros en probar Push — empezamos con el miedo a volar y amplíamos más fobias pronto.
         </p>
 
         {!sent ? (

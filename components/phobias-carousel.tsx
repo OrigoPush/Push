@@ -52,14 +52,18 @@ export function PhobiasCarousel() {
             por venir
           </span>
         </h2>
-        <p className="text-lg md:text-xl font-light text-gray-500 mb-14">
-          Seguimos ampliando nuestras experiencias para ayudarte a vencer más miedos.
+        <p className="text-lg md:text-xl font-light text-white mb-14">
+        Seguimos ampliando nuestras experiencias XR — empezando por el miedo a volar y sumando más fobias de forma progresiva.
         </p>
       </div>
 
       {/* Carrusel centrado */}
-      <div ref={scrollRef} className="w-full overflow-x-auto scrollbar-hide scroll-smooth">
-        <div className="flex gap-8 px-10 w-max snap-x snap-mandatory">
+      <div
+        ref={scrollRef}
+        className="w-full overflow-x-auto scrollbar-hide scroll-smooth snap-x snap-mandatory"
+        style={{ WebkitOverflowScrolling: "touch" }}
+      >
+        <div className="flex gap-8 px-10 w-max">
           {phobias.map((phobia, i) => {
             const Icon = phobia.icon
             return (
